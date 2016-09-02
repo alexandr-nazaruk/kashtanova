@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Created by onazaruk on 15.02.2016.
@@ -17,7 +16,6 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/user")
 public class UserController {
     @Autowired
-    @Deprecated
     private UserDAO userDAO;
 
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
