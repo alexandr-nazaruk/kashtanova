@@ -1,0 +1,33 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+    <definition name="template" template="/WEB-INF/views/layout.jsp">
+        <put-attribute name="header"  value="/WEB-INF/views/tiles/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />
+    </definition>
+
+    <definition name="home" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/home.jsp" />
+    </definition>
+    <definition name="contacts" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/contacts.jsp" />
+    </definition>
+    <definition name="about" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/about.jsp" />
+    </definition>
+    <definition name="forum" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/forum.jsp" />
+    </definition>
+    <definition name="issues" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/issues.jsp" />
+    </definition>
+
+    <definition name="editPost" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/editPost.jsp" />
+    </definition>
+    <definition name="viewPost" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/viewPost.jsp" />
+    </definition>
+</tiles-definitions>
